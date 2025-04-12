@@ -25,11 +25,7 @@ const Todo = ({ id, value, isDone, deleteTodo, markDone, updateValue, editTodoId
                 <div className={isDone ? "completed-task" : ""}>
                     <input type="checkbox" checked={isDone} onChange={handleComplete} />
                     <span>{value}</span>
-                    {editTodoId === null && (
-                        <>
-                            &nbsp;<button onClick={() => setEditTodoId(id)}>Edit</button>
-                        </>
-                    )}
+                    &nbsp;<button onClick={() => setEditTodoId(id)}>Edit</button>
                     {isDone && (
                         <>
                             &nbsp;<button onClick={() => deleteTodo(id)}>Delete</button>
