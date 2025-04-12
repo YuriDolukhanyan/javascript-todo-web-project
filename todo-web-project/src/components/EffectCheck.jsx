@@ -9,7 +9,7 @@ const EffectCheck = () => {
 
     useEffect(() => {
         console.log('rendered');
-        console.log('Nations', nations);
+        console.log('Nations:', nations);
     }); // Runs after every render (no dependency)
     
     useEffect(() => {
